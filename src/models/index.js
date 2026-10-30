@@ -1,0 +1,20 @@
+// Central export so the rest of the app can do `require('../models').Lead` etc.
+module.exports = {
+  User: require("./User"),
+  Lead: require("./Lead"),
+  Property: require("./Property"),
+  Conversation: require("./Conversation"),
+  Message: require("./Message"),
+  FollowUp: require("./FollowUp"),
+  Meeting: require("./Meeting"),
+  LeadScore: require("./LeadScore"),
+  Notification: require("./Notification"),
+  Analytics: require("./Analytics"),
+  Settings: require("./Settings"),
+  AuditLog: require("./AuditLog"),
+  OutboundJob: require("./OutboundJob"),
+  Campaign: require("./Campaign"),
+  EmailTemplate: require("./EmailTemplate"),
+  Audience: require("./Audience"),
+  PropertySite: require("./PropertySite"),
+};

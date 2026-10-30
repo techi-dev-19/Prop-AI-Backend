@@ -1,0 +1,46 @@
+{
+  "name": "real-estate-crm-backend",
+  "version": "1.0.0",
+  "description": "AI Real Estate CRM & WhatsApp Automation Platform - Backend",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed:admin": "node src/utils/seedAdmin.js",
+    "seed:client": "node src/utils/seedClient.js",
+    "migrate:lead-contact-indexes": "node src/scripts/migrateLeadContactIndexes.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.27.0",
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.11.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.2.0",
+    "form-data": "^4.0.6",
+    "googleapis": "^144.0.0",
+    "helmet": "^7.1.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "papaparse": "^5.4.1",
+    "pdf-parse": "^2.4.5",
+    "pino": "^10.3.1",
+    "socket.io": "^4.8.3",
+    "streamifier": "^0.1.1",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
